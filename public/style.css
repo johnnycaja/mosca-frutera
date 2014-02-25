@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,300,200);
+@import url(http://fonts.googleapis.com/css?family=Kelly+Slab);
 
 .content-wrapper {
 	width: 960px;
@@ -17,7 +18,7 @@
 }
 
 #main-banner-content {
-	/*Aca usamos un hack para centrar verticalmente*/
+	/*Aca usamos un hack para centrar verticalmente, necesario porque el contenido es de altura variable*/
 	display: table-cell;
 	vertical-align: middle;
 	/*Especificamos el mismo ancho y alto del contenedor externo a mano porque los porcentajes los ignora*/
@@ -33,14 +34,60 @@
 	position: absolute;
 	width: 50px;
 	height: 50px;
-	background: silver;
-	margin-top: 150px;
+	/*Usamos top 50% y margin-top de a mitad del alto del elemento para centrarlo verticalmente en su contenedor*/
+	top: 50%;
+	margin-top: -25px;
+	line-height: 50px; /*Esto es igual a la altura del contenedor para que el texto quede centrado verticalmente*/
+	font-size: 40px;
+	cursor: pointer;
 }
 
 #left-arrow {
-	left: 120px;
+	left: 60px;
 }
 
 #right-arrow {
-	right: 120px;
+	right: 60px;
 }
+
+#main-banner-photo {
+	height: 350px;
+}
+
+#shangai-photo {
+	height: 100%;
+	width: 100%;
+}
+
+#time {
+	background-color: #F8F8F8;
+	height: 300px;
+	text-align: center;
+
+}
+
+/*#time-box {
+	display: table-cell;
+	vertical-align: middle;
+	height: 300px;
+	margin: auto;*/
+
+}
+.time-unit {
+		width: 50px;
+		float:left;
+}
+.date-number {
+	font-family: 'Kelly Slab', cursive;
+	font-size: 80px;
+	color: #CE574A;
+	font-weight: bold;
+}
+
+.date-label {
+	font-family: 'Kelly Slab', cursive;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #A5A5A5;
+}
+
