@@ -118,11 +118,12 @@
 
 #info {
 	background-color: #F8F8F8;
-	height: 300px;
+	height: 250px;
 	border-bottom: 1.5px solid #E5E5E5;
 	font-family: 'Exo 2', arial, sans-serif;
 	font-size: 10px;
 	font-weight: 200;	
+
 }
 
 #info h2 {
@@ -131,13 +132,14 @@
 	font-weight: 300 bold;
 	text-align: center;
 	margin-bottom: 8px;
+	display: inline-block;
+	padding-left: 10px;
 }
 
 #locations, #meetings, #shangai {
-	width: 150px;
+	width: 180px;
 	height: 100px;
-	margin-top: 10px;
-
+	margin-top: 30px;
 }
 
 #locations {
@@ -148,6 +150,10 @@
 	filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+#info i {
+	font-size: 15px;
 }
 
 #meetings {
@@ -167,5 +173,105 @@
 #shangai {
 	position: absolute;
 	left: 60%;
+}
+
+#main-footer {
+	background-color: #F8F8F8;
+	height: 350px;
+	border-bottom: 1.5px solid #E5E5E5;
+	font-family: 'Exo 2', arial, sans-serif;
+	font-size: 10px;
+	font-weight: 200;
+}
+
+#main-footer h2 {
+	font-family: 'Exo 2', arial, sans-serif;
+	font-size: 20px;
+	font-weight: 300 bold;
+	text-align: center;
+	margin-bottom: 8px;
+	display: inline-block;
+	padding-left: 10px;
+	margin-top: 30px;
+
+}
+
+#contact-form {
+	margin-left: 20%;
+	top: 30px;
+	height: 175px;
+	font-size: 15px;
+}
+#contact-field {
+	position: absolute;
+	background-color: white;
+	border-radius: 2px solid white;
+	border-radius: 10px;
+	width: 400px;
+	height: 40px;
+	top: 70px;
+
+}
+#contact-field p {
+	position: absolute;
+	text-transform: uppercase;
+	top: 50%;
+	margin-top: -20px;
+	line-height: 40px;
+	margin-left: 20px;
+	font-size: 12px;
+	color: #B5B5B5;
+}
+
+#contact-button {
+	position: absolute;
+	background-color: #CD574A;
+	border-radius: 2px solid #CD574A;
+	border-radius: 10px;
+	margin-left: 420px;
+	width: 160px;
+	height: 40px;
+	top: 70px;
+}
+#contact-button p {
+	position: absolute;
+	text-transform: uppercase;
+	top: 50%;
+	margin-top: -20px;
+	line-height: 40px;
+	margin-left: 40%; /*no entiendo por que no me funciona text-align:center; */
+	font-size: 12px;
+	color: white;
+}
+
+#social {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#social-media-links i {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: white;
+	font-size: 20px;
+	border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    background: #B5B5B5;
+    border: 2px solid #B5B5B5;
+   	cursor: pointer;
+
+}
+
+#copyright-mail {
+	margin-top: 30px;
+}
+
+#copyright-mail i {
+	font-size: 12px;
+	color: #B5B5B5;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
