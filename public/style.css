@@ -8,7 +8,14 @@
 }
 
 #main-banner {
-	background: #6DC1B2 url("images/mapa.png") no-repeat top right;
+	background: #6DC1B2 url("images/mapa.png") no-repeat top center;
+/*	background: #6DC1B2;
+*/	/*background: -moz-linear-gradient(left,  #6DC1B2 0%, #6DC1B2 50%, #50b69f 50%, #50b69f 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6DC1B2), color-stop(50%,#6DC1B2), color-stop(50%,#50b69f), color-stop(100%,#50b69f));
+	background: -webkit-linear-gradient(left,  #6DC1B2 0%,#6DC1B2 50%,#50b69f 50%,#50b69f 100%);
+	background: -o-linear-gradient(left,  #6DC1B2 0%,#6DC1B2 50%,#50b69f 50%,#50b69f 100%);
+	background: -ms-linear-gradient(left,  #6DC1B2 0%,#6DC1B2 50%,#50b69f 50%,#50b69f 100%);*/
+	background: url("images/mapa.png") no-repeat top center, linear-gradient(to right,  #6DC1B2 0%,#6DC1B2 50%,#50b69f 50%,#50b69f 100%);
 	color: white;
 	text-align: center;
 	font-family: 'Exo 2', arial, sans-serif;
@@ -114,6 +121,10 @@
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #A5A5A5;
+}
+
+#date .date-number {
+	color: #4FB59E;
 }
 
 #info {
