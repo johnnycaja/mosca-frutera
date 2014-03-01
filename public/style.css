@@ -1,10 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,300,200);
 @import url(http://fonts.googleapis.com/css?family=Kelly+Slab);
 
+body {
+	background: url("images/ricepaper2.png") #E1DFDF;
+}
+
 .content-wrapper {
 	width: 960px;
 	margin: auto;
 	position: relative;
+}
+
+#wrapper > section {
+	border-bottom: 2px solid #E5E5E5;
+	box-shadow: white 0 2px inset;
+}
+
+#wrapper > footer {
+	box-shadow: white 0 2px inset;
 }
 
 #main-banner {
@@ -22,6 +35,19 @@
 	font-size: 30px;
 	font-weight: 200;
 	height: 300px;
+}
+
+#main-banner .content-wrapper::after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 20px solid #6DC1B2;
 }
 
 #main-banner-content {
@@ -58,55 +84,65 @@
 }
 
 #main-banner-photo {
-	height: 350px;
-}
-
-#shangai-photo {
-	height: 100%;
-	width: 100%;
+	background: url("images/stripes.png"), url("http://blyme-yaoi.com/main/wp-content/uploads/2011/01/Kuragehime-Mayaya-1280x350.jpg") center center; 
+	height: 330px;
 }
 
 #time {
-	background-color: #F8F8F8;
-	height: 300px;
-	text-align: center;
 	border-bottom: 1.5px solid #E5E5E5;
+}
 
+#time .content-wrapper {
+	height: 300px;
+	position: relative;
 }
 
 #time-box {
-	display: table-cell;
-	vertical-align: middle;
-	height: 200px;
+	position: absolute;
+	height: 75px;
 	margin: auto;
-
+	top: 0; bottom: 0; left: 0; right :0;
 }
 
+#time-box::before {
+	content: "\F017";
+	font-family: FontAwesome;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 75px;
+	line-height: 75px;
+	font-size: 60px;
+	color: #DDD;
+}
 
 .time-unit {
 	width: 150px;
-	border-left: 1.5px solid #E5E5E5;
-	text-align: center;
+	height: 75px;
+	border-left: 2px solid #E5E5E5;
+	padding-left: 30px;
+	box-sizing: border-box;
+	box-shadow: white 2px 0 inset;
 }
 
 #days {
 	position: absolute;
-	left: 20%;
+	left: 200px;
 }
 
 #hours {
 	position: absolute;
-	left: 35%;
+	left: 350px;
 }
 
 #minutes {
 	position: absolute;
-	left: 50%;
+	left: 500px;
 }
 
 #date {
 	position: absolute;
-	left: 65%;
+	left: 650px;
 }
 
 .date-number {
@@ -128,7 +164,6 @@
 }
 
 #info {
-	background-color: #F8F8F8;
 	height: 250px;
 	border-bottom: 1.5px solid #E5E5E5;
 	font-family: 'Exo 2', arial, sans-serif;
@@ -187,12 +222,37 @@
 }
 
 #main-footer {
-	background-color: #F8F8F8;
-	height: 350px;
 	border-bottom: 1.5px solid #E5E5E5;
 	font-family: 'Exo 2', arial, sans-serif;
 	font-size: 10px;
 	font-weight: 200;
+}
+
+#main-footer .content-wrapper {
+	padding-bottom: 30px;
+}
+
+#main-footer .content-wrapper::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 60px;
+	height: 150px;
+	background: #6DC1B2;
+	left: 0;
+}
+
+#main-footer .content-wrapper::after {
+	content: "";
+	position: absolute;
+	bottom: 150px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 20px solid #6DC1B2;
 }
 
 #main-footer h2 {
